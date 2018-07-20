@@ -58,8 +58,7 @@ Features
 Credits
 ---------
 
-This package was created with the help of [Verbiste](https://perso.b2b2c
-.ca/~sarrazip/dev/verbiste.html) and [scikit-learn](http://scikit-learn.org/stable/index.html).
+This package was created with the help of [Verbiste](https://perso.b2b2c.ca/~sarrazip/dev/verbiste.html) and [scikit-learn](http://scikit-learn.org/stable/index.html).
 
 The logo was designed by [Zuur](https://github.com/zuuritaly).
 
