@@ -7,60 +7,30 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-[![pypi](https://img.shields.io/pypi/v/mlconjug.svg)](https://pypi.python.org/pypi/mlconjug)    [![travis](https://img.shields.io/travis/SekouD/mlconjug.svg)](https://travis-ci.org/SekouD/mlconjug)   [![appveyor](https://ci.appveyor.com/api/projects/status/6iatj101xxfehbo8/branch/master?svg=true)](https://ci.appveyor.com/project/SekouD/mlconjug) [![readthedocs](https://readthedocs.org/projects/mlconjug/badge/?version=latest)](https://mlconjug.readthedocs.io/en/latest/?badge=latest)  [![pyup](https://pyup.io/repos/github/SekouD/mlconjug/shield.svg)](https://pyup.io/repos/github/SekouD/mlconjug/)   [![codecov](https://codecov.io/gh/SekouD/mlconjug/branch/master/graph/badge.svg)](https://codecov.io/gh/SekouD/mlconjug)    [![snyk](https://snyk.io/test/github/SekouD/mlconjug/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/SekouD/mlconjug?targetFile=requirements.txt)
-
 Summary: A Python library to conjugate French, English, Spanish, Italian, Portuguese and Romanian verbs using Machine Learning techniques.
 
-
 Any verb in one of the supported language can be conjugated, as the module contains a Machine Learning model of how the verbs behave.
-
 Even completely new or made-up verbs can be successfully conjugated in this manner.
-
 The supplied pre-trained models are composed of:
-
-- a binary feature extractor,
-- a feature selector using Linear Support Vector Classification,
-- a classifier using Stochastic Gradient Descent.
-
+- a binary feature extractor, - a feature selector using Linear Support Vector Classification, - a classifier using Stochastic Gradient Descent.
 MLConjug uses scikit-learn to implement the Machine Learning algorithms.
-
 Users of the library can use any compatible classifiers from scikit-learn to modify and retrain the models.
-
 The training data for the french model is based on Verbiste https://perso.b2b2c.ca/~sarrazip/dev/verbiste.html .
+The training data for English, Spanish, Italian, Portuguese and Romanian was generated using unsupervised learning techniques using the French model as a model to query during the training.
 
-The training data for English, Spanish, Italian, Portuguese and Romanian was generated using unsupervised learning techniques
-  using the French model as a model to query during the training.
+* Free software: MIT license * Documentation: https://mlconjug.readthedocs.io.
+Supported Languages -------------------
+- French - English - Spanish - Italian - Portuguese - Romanian
 
-
-* Free software: MIT license
-* Documentation: https://mlconjug.readthedocs.io.
-
-Supported Languages
--------------------
-
-- French
-- English
-- Spanish
-- Italian
-- Portuguese
-- Romanian
-
-
-Features
---------
-
-- Easy to use API.
-- Includes pre-trained models with 99% + accuracy in predicting conjugation class of unknown verbs.
-- Easily train new models or add new languages.
-- Easily integrate MLConjug in your own projects.
-- Can be used as a command line tool.
-
-Credits
----------
-
+Features --------
+- Easy to use API. - Includes pre-trained models with 99% + accuracy in predicting conjugation class of unknown verbs. - Easily train new models or add new languages. - Easily integrate MLConjug in your own projects. - Can be used as a command line tool.
+Credits ---------
 This package was created with the help of [Verbiste](https://perso.b2b2c.ca/~sarrazip/dev/verbiste.html) and [scikit-learn](http://scikit-learn.org/stable/index.html).
-
 The logo was designed by [Zuur](https://github.com/zuuritaly).
+
+
+
+
 
 
 
