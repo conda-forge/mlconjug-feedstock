@@ -8,14 +8,34 @@ Package license: MIT
 Feedstock license: BSD 3-Clause
 
 Summary: [![pypi](https://img.shields.io/pypi/v/mlconjug.svg)](https://pypi.python.org/pypi/mlconjug)    [![travis](https://img.shields.io/travis/SekouD/mlconjug.svg)](https://travis-ci.org/SekouD/mlconjug)   [![appveyor](https://ci.appveyor.com/api/projects/status/6iatj101xxfehbo8/branch/master?svg=true)](https://ci.appveyor.com/project/SekouD/mlconjug) [![readthedocs](https://readthedocs.org/projects/mlconjug/badge/?version=latest)](https://mlconjug.readthedocs.io/en/latest/?badge=latest)  [![pyup](https://pyup.io/repos/github/SekouD/mlconjug/shield.svg)](https://pyup.io/repos/github/SekouD/mlconjug/)   [![codecov](https://codecov.io/gh/SekouD/mlconjug/branch/master/graph/badge.svg)](https://codecov.io/gh/SekouD/mlconjug)    [![snyk](https://snyk.io/test/github/SekouD/mlconjug/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/SekouD/mlconjug?targetFile=requirements.txt)
+
+
+
 A Python library to conjugate French, English, Spanish, Italian, Portuguese and Romanian verbs using Machine Learning techniques.
 
+
+
 Any verb in one of the supported language can be conjugated, as the module contains a Machine Learning model of how the verbs behave.
+
 Even completely new or made-up verbs can be successfully conjugated in this manner.
 
-* Free software: MIT license * Documentation: https://mlconjug.readthedocs.io.
-Supported Languages -------------------
-- French - English - Spanish - Italian - Portuguese - Romanian
+
+
+* Free software: MIT license
+ * Documentation: https://mlconjug.readthedocs.io.
+
+Supported Languages
+ -------------------
+
+
+- French
+ - English
+ - Spanish
+ - Italian
+ - Portuguese
+ - Romanian
+
+
 
 
 
