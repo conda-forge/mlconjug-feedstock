@@ -39,8 +39,6 @@ requirements:
 test:
   imports:
     - mlconjug
-  commands:
-    - mlconjug --help
 
 about:
   home: https://github.com/SekouD/mlconjug
