@@ -15,7 +15,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - mlconjug=mlconjug.cli:main
   script: python -m pip install --no-deps --ignore-installed .
@@ -39,8 +39,6 @@ requirements:
 test:
   imports:
     - mlconjug
-  commands:
-    - mlconjug --help
 
 about:
   home: https://github.com/SekouD/mlconjug
