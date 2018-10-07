@@ -1,8 +1,8 @@
 {% set name = "mlconjug" %}
-{% set version = "3.1.3" %}
+{% set version = "3.1.4" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "a0ba92de0579ed0e74fc0d594bff3d4895728bd6e21b881f5c2b084c328cefbc" %}
+{% set hash_value = "0072deffe79bb73cb18d24fc1cc3db55f0ee2c643f1daeca934e4a5a01dc1973" %}
 
 package:
   name: '{{ name|lower }}'
@@ -15,7 +15,7 @@ source:
 
 build:
   noarch: python
-  number: 3
+  number: 0
   entry_points:
     - mlconjug=mlconjug.cli:main
   script: python -m pip install --no-deps --ignore-installed .
