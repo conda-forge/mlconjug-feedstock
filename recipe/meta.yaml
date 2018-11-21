@@ -1,8 +1,8 @@
 {% set name = "mlconjug" %}
-{% set version = "3.2.0" %}
+{% set version = "3.2.2" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "4237bded7b86ccd79170c00d2c044ca8370111a514c724c65adef4313e7fa066" %}
+{% set hash_value = "f7497af4ab6ca4266b8fc6a2c986fb9e7b447a61838dc746343c69ee91ab9416" %}
 
 package:
   name: '{{ name|lower }}'
