@@ -1,34 +1,31 @@
 {% set name = "mlconjug" %}
 {% set version = "3.4.0" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "be03bdc5757f8207f2faffba127be40229b6b980db53c6ab018ed904395b424e" %}
 
 package:
   name: '{{ name|lower }}'
   version: '{{ version }}'
 
 source:
-  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  '{{ hash_type }}': '{{ hash_value }}'
+  fn: '{{ name }}-{{ version }}.tar.gz'
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  'sha256': 'be03bdc5757f8207f2faffba127be40229b6b980db53c6ab018ed904395b424e'
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - mlconjug=mlconjug.cli:main
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
     - setuptools
     - pytest-runner
-    - python
+    - python {{ python_min }}
     - setuptools
   run:
-    - python
+    - python >={{ python_min }}
     - cython
     - setuptools
     - click >=6.0
@@ -37,6 +34,8 @@ requirements:
     - scikit-learn
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - mlconjug
 
